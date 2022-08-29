@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 550px;
+            height: 350px;
+            background-color: rgb(32, 32, 32);
+            margin: 80px auto;
+        }
+        #box2{
+            width: 550px;
+            height: 350px;
+            background-color: rgb(32, 32, 32);
+            margin: 80px auto;
+            border-radius: 5px;
+            display: none;
+        }
+        .word2{
+            color: white;
+          padding: 60px;
+          text-align: center;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 36px;
+        }
+        .word{
+            color: white;
+          padding: 60px;
+          text-align: center;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 36px;
+        }
+        #but1,#but2{
+            position: relative;
+            left: 38%;
+            transform: translate(-50%);
+            margin-right: 50px;
+            width: 76px;
+            height: 28px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        #but3{
+            width: 76px;
+            height: 28px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 10rem;
+            display: none;
+            margin-top: 10px;
+        }
+        #but4{
+            width: 76px;
+            height: 28px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 1rem;
+            margin-top: 20px;
+            display: none;
+            margin-top: -6rem;
+        }
+        #but5{
+            width: 76px;
+            height: 28px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 17rem;
+            display: none;
+            margin-top: 20px;
+        }
+        #but6{
+            width: 76px;
+            height: 28px;
+            font-size: 20px;
+            cursor: pointer;
+           margin-left: 10rem;
+           margin-top: -6rem;
+
+           display: none;
+        }
+        #but7{
+            width: 76px;
+            height: 28px;
+            font-size: 20px;
+            cursor: pointer;
+           margin-left: 16rem;
+           display: none;
+        }
+        #but8{
+            width: 76px;
+            height: 28px;
+            font-size: 20px;
+            cursor: pointer;
+           margin-left: 16rem;
+           margin-top: -6rem;
+           display: none;
+        }
+        #notif{
+            background-color: #ccc;
+            width: 200px;
+            height: 100px;
+           margin: -130px auto;
+           position: relative;
+           border-radius: 2px;
+            display: none;
+        }
+        #kulit{
+            position: relative;
+            top: 18px;
+            left: 46px;
+            justify-content: center;
+            font-size: 18px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #bck{
+            margin-top: 16px;
+            margin-left: 64px;
+            width: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p class="word">MUKA AKONG ASO</p>
+        <button id="but1">TAMA</button>
+        <button id="but2">MALI</button>
+        <button id="but3">MALI</button>
+        <button id="but4">MALI</button>
+        <button id="but5">MALI</button>
+        <button id="but6">MALI</button>
+        <button id="but7">MALI</button>
+        <button id="but8">MALI</button>
+        <div id="notif">
+            <p id="kulit">kulit mo ya!</p>
+            <button id="bck">back</button>
+        </div>
+    </div>
+    <div id="box2">
+        <p class="word2">BUTI ALAM MO :)</p>
+    </div>
+    <script>
+        var but1 = document.getElementById("but1");
+        var but2 = document.getElementById("but2");
+        var but3 = document.getElementById("but3");
+        var but4 = document.getElementById("but4");
+        var but5 = document.getElementById("but5");
+        var but6 = document.getElementById("but6");
+        var but7 = document.getElementById("but7");
+        var but8 = document.getElementById("but8");
+        var notif = document.getElementById("notif");
+        var bck = document.getElementById("bck");
+        var box = document.getElementById("box");
+        var box2 = document.getElementById("box2");
+
+but2.addEventListener("click",function(){
+    but3.style.display="block";
+    but2.style.display="none";
+})
+but3.addEventListener("click",function(){
+    but3.style.display="none";
+    but4.style.display="block";
+})
+but4.addEventListener("click",function(){
+    but4.style.display="none";
+    but5.style.display="block";
+})
+but5.addEventListener("click",function(){
+    but6.style.display="block";
+    but5.style.display="none";
+})
+but6.addEventListener("click",function(){
+    but7.style.display="block";
+    but6.style.display="none";
+})
+but7.addEventListener("click",function(){
+    but8.style.display="block";
+    but7.style.display="none";
+})
+
+but8.addEventListener("click",function(){
+    notif.style.display="block";
+})
+bck.addEventListener("click",function(){
+    notif.style.display="none";
+})
+
+but1.addEventListener("click",function(){
+    box.style.display="none";
+    box2.style.display="block";
+})
+
+
+    </script>
+</body>
+</html>
